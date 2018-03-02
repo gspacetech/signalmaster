@@ -3,8 +3,8 @@
 var express = require('express'),
     config = require('getconfig'),
     fs = require('fs'),
-//    sockets = require('./sockets'),
-    sockets = require('signalmaster/sockets'),
+    sockets = require('./sockets'),
+//    sockets = require('signalmaster/sockets'),
     port = parseInt(process.env.PORT || config.server.port, 10),
     server_handler = function (req, res) {
         res.writeHead(404);
